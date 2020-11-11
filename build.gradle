@@ -1,0 +1,26 @@
+plugins {
+    id 'war'
+}
+
+group 'com.korzh86a'
+version '1.0'
+
+repositories {
+    mavenCentral()
+}
+
+sourceCompatibility = 15
+targetCompatibility = 15
+
+dependencies {
+    compileOnly('javax:javaee-web-api:8.0.1')
+    compileOnly ('org.apache.tomcat:tomcat-catalina:9.0.37')
+    // https://mvnrepository.com/artifact/javax.servlet/javax.servlet-api
+    providedCompile ('javax.servlet:javax.servlet-api:4.0.1')
+    // https://mvnrepository.com/artifact/javax.servlet.jsp/javax.servlet.jsp-api
+    providedCompile ('javax.servlet.jsp:javax.servlet.jsp-api:2.3.1')
+    // https://mvnrepository.com/artifact/mysql/mysql-connector-java
+    compile ('mysql:mysql-connector-java:8.0.22')
+    // https://mvnrepository.com/artifact/jstl/jstl
+    compile ('jstl:jstl:1.2')
+}

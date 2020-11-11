@@ -1,0 +1,24 @@
+# Ignore Gradle GUI config
+gradle-app.setting
+
+# IntelliJ
+.idea
+*.iml
+*.ipr
+*.iws
+
+# Misc
+*.log
+
+# pass
+src/main/resources/app.properties
+
+#gradle
+.gradle
+build
+gradle
+gradlew
+gradlew.bat
+
+#git
+.git
